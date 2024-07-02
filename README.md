@@ -1,2 +1,0 @@
-# rebelliousnerd.github.io
- website
