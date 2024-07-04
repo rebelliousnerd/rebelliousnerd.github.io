@@ -87,22 +87,13 @@ text-align: center;}
 .main { grid-area: main; }
 .footer { grid-area: footer; }
 .skip {
-position: absolute;
+  position: absolute;
   display: inline-block;
   padding: .375rem .75rem;
   line-height: 1;
   font-size: 1.25rem;
   background-color: white;
   color: black;}
-  
-  
-  
-  
-  
-  
-  
-  
-  
 .skip:not(:focus) {
   height: 1px;
   width: 1px;
