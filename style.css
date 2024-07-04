@@ -50,7 +50,6 @@ text-align: center;}
 .layout {
   width: 100%;
   min-height: 100vh;
-  display: -ms-grid;
   display: grid;
   grid:
     "header navigation" auto
@@ -110,6 +109,7 @@ max-height: 50%;}
 #aboutmeimg  {
 float: left;    
 margin: 0 15px 0 0;}
+
 
 .article {
 text-align: center;}
@@ -258,7 +258,6 @@ font-weight: bold;}
 .layout {
 width: 100%;
 height: 100%;
-display: -ms-grid;
 display: grid;
 grid:
 "header" auto
