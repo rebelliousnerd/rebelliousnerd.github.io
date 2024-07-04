@@ -212,7 +212,6 @@ color : rgb(212, 212, 187);}
 
 
 
-
 .footer a:focus,
 .footer a:active, .footer a:hover  {
   color:navy;
@@ -279,8 +278,6 @@ padding-left:25%;
 padding-top:5%;
 /*max-width: 40ch;*/
 text-align: left;}
-
-
 #preview  {
 max-width: 70%;
 max-height: 70%;
@@ -295,11 +292,6 @@ margin-left: 14%;
 margin-right:14%; 
 text-align:center;}
 }
-
-
-
-
-
 @media print  {
 body  { 
 font-size: 1em;}
