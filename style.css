@@ -110,6 +110,7 @@ font-style : normal;
 font-weight : normal;
 color: rgb(20, 15, 2);
 background-color : rgb(240, 241, 244);}
+
 h1 , h2 {font-weight: inherit;}
 .intro {
 background : black;
@@ -203,12 +204,15 @@ text-align:center;}
 font-family: Inter;}
 .main, aside, footer, header, nav{
 display:block;}
-
-
 footer {
 background-color: black;}
 .websiteinfo {
 color : rgb(212, 212, 187);}
+
+
+
+
+
 .footer a:focus,
 .footer a:active, .footer a:hover  {
   color:navy;
@@ -222,22 +226,11 @@ padding: .5% 0 2% 0;}*/
 font-size : 1.1em;
 text-align : center;
 margin: 1% 0}
-
 .content p , .related p {
 margin: 1% 0;
 font-family:Inter;
 line-height: 2;} 
 footer p a , footer p a:visited {color: black;}
-/*#home h1{
-font-family: Cambria; 
-font-size: 1.2em;
-line-height: 1.5;
-padding: 2% 0 0 .2%;}
-#home p {
-	font-family: arial;
-	font-size: 1em;
-	line-height: 1.5;
-	padding: 1% 0 0 .1%;}*/
 .related a{
   text-align: center;
   display:block;}
