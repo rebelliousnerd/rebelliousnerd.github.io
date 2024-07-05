@@ -1,19 +1,17 @@
-@font-face {
-font-family: 'berkshire_swashregular';
-src: url('berkshireswash-regular.ttf');
-src: url('berkshireswash-regular-webfont.woff2') format('woff2');
-font-weight: normal;
-font-style: normal;}
 blockquote {font-family:'Josefin Sansitialic';
 font-size:110%;
 border-left: 10px solid grey;
 margin: 1.5em 10px;
 padding: 0.5em 10px;}
-  
-  
 .websiteinfo p {
 text-align : center;
 padding: 2% 0} 
+
+
+
+
+
+
 .nestedgrid {
 	width: 100%;
     /*min-height: 100vh;*/
@@ -110,8 +108,9 @@ font-style : normal;
 font-weight : normal;
 color: rgb(20, 15, 2);
 background-color : rgb(240, 241, 244);}
-
 h1 , h2 {font-weight: inherit;}
+
+
 .intro {
 background : black;
 text-align : center;}
@@ -208,6 +207,8 @@ footer {
 background-color: black;}
 .websiteinfo {
 color : rgb(212, 212, 187);}
+
+
 
 
 
