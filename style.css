@@ -6,25 +6,31 @@ padding: 0.5em 10px;}
 .websiteinfo p {
 text-align : center;
 padding: 2% 0} 
-
-
-
-
-
-
+#removestyle{
+  text-decoration: none;}
+  
+  
+  
+  
+  
 .nestedgrid {
 	width: 100%;
-    /*min-height: 100vh;*/
 	display: grid;
-	grid-template-rows: repeat(5, auto);
-	grid-template-columns: repeat(8, auto);
-	gap: 1em;
-	width: 100%;
-	height: 100%;}
-.articlea {
-	grid-area: 1 / 2 / 5 / 4;;}
-.photoa {
-	grid-area: 1 / 4 / 2 / 5;}
+    grid:
+    "heading heading" auto
+    "articlename articlename" auto
+    "summary photo" auto
+    / auto;
+  gap: 1em;
+  grid-auto-flow: column;
+  /*justify-content: start;*/
+  align-content: start;
+  width: 100%;
+  height: 100%;;}
+.heading { grid-area: heading; }
+.articlename { grid-area: articlename; }
+.summary { grid-area: summary; }
+.photo { grid-area: photo; }
 blockquote:before {
   color: grey;
   content: open-quote;
@@ -98,8 +104,14 @@ text-align: center;}
   overflow: hidden;
   white-space: nowrap;
   clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);}
+  
+  
+  
+  
+  
+  
+  
 body {
 margin : 0;
 font-family :Inter, Arial;
@@ -109,8 +121,6 @@ font-weight : normal;
 color: rgb(20, 15, 2);
 background-color : rgb(240, 241, 244);}
 h1 , h2 {font-weight: inherit;}
-
-
 .intro {
 background : black;
 text-align : center;}
@@ -121,7 +131,9 @@ max-width: 25%;
 max-height: 25%;}
 #aboutmeimg  {
 float: left;    
-margin: 0 15px 0 0;}
+margin: 0 15px 0 0;
+max-width: 50%;
+max-height: 50%;}
 .article {
 text-align: center;}
 #preview {
@@ -143,7 +155,8 @@ padding-top: 12%;
 	word-spacing: .5em;
 	text-decoration:none}
 .article p{
-margin: 10%;}
+margin: 10%;
+text-align: center;}
 #sitename a:focus,
 #sitename a:active, a:hover {
   color:gold;
@@ -196,6 +209,8 @@ padding: 2% 8%;
 margin-right:5%;
 margin-left: 5%;
 text-align:center;}
+
+
 .about{
 padding: 2% 8%; 
 text-align:center;}
@@ -207,29 +222,26 @@ footer {
 background-color: black;}
 .websiteinfo {
 color : rgb(212, 212, 187);}
-
-
-
-
-
-
 .footer a:focus,
 .footer a:active, .footer a:hover  {
   color:navy;
   text-decoration: underline;}
-/*.content h1 , .aside h1 {
-font-size : 110%;
+.content h1 , .aside h1 {
+color: rgb(20, 15, 2);
+/*font-size : 110%;
 text-align : center;
 margin: 1% 0;
-padding: .5% 0 2% 0;}*/
+padding: .5% 0 2% 0;*/}
 .content h2 , aside h2 {
 font-size : 1.1em;
 text-align : center;
-margin: 1% 0}
+margin: 1% 0
+color: rgb(20, 15, 2);}
 .content p , .related p {
 margin: 1% 0;
 font-family:Inter;
-line-height: 2;} 
+line-height: 2;
+color: rgb(20, 15, 2);} 
 footer p a , footer p a:visited {color: black;}
 .related a{
   text-align: center;
@@ -282,7 +294,6 @@ text-align: left;}
 #preview  {
 max-width: 70%;
 max-height: 70%;
-/*float: right;*/
 padding-right:25%;
 padding-top: 8%;
 display: block;}}
@@ -298,6 +309,8 @@ body  {
 font-size: 1em;}
 #menu {display: none;}
 body, .intro, .websiteinfo, a:link, a:visited, a:focus, a:hover, a:active{color: darkslategrey;}
+
+
 body, .intro, .websiteinfo  {
 background-color: transparent; }
 #sitename{font-style: normal;}
