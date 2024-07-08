@@ -1,4 +1,4 @@
-blockquote {font-family:'Josefin Sansitialic';
+blockquote {font-family:'Josefin Sansitialic', 'sans serif';
 font-size:110%;
 border-left: 10px solid grey;
 margin: 1.5em 10px;
@@ -7,26 +7,26 @@ padding: 0.5em 10px;}
 text-align : center;
 padding: 2% 0} 
 #removestyle{
-  text-decoration: none;}
+text-decoration: none;}
   
   
   
   
   
 .nestedgrid {
-	width: 100%;
-	display: grid;
-    grid:
-    "heading heading" auto
-    "articlename articlename" auto
-    "summary photo" auto
-    / auto;
-  gap: 1em;
-  grid-auto-flow: column;
-  /*justify-content: start;*/
-  align-content: start;
-  width: 100%;
-  height: 100%;;}
+width: 100%;
+display: grid;
+grid:
+"heading heading" auto
+"articlename articlename" auto
+"summary photo" auto
+/ auto;
+gap: 1em;
+grid-auto-flow: column;
+/*justify-content: start;*/
+align-content: start;
+width: 100%;
+height: 100%;;}
 .heading { grid-area: heading; }
 .articlename { grid-area: articlename; }
 .summary { grid-area: summary; }
@@ -41,13 +41,13 @@ blockquote:before {
 blockquote p {
  display: inline;}
 figure {padding-top:2.5%;}
-figcaption {font-family:Inter;
+figcaption {font-family:Inter, sans-serif;
 font-size: 100%;
 font-style: italic;
 line-height: 1.5;
 text-align: center;}
 .email {
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display' 'sans serif';
   font-weight: bold;
   background-color:lightblue ;
   border: none;
@@ -62,7 +62,7 @@ text-align: center;}
 .nodisplay {
 visibility:hidden;}
 .title {
-font-family:'Playfair Display';
+font-family:'Playfair Display', 'sans serif';
 font-weight: bold;
 color: rgb(40, 28, 194);
 font-size:150%;
@@ -108,19 +108,17 @@ text-align: center;}
   
   
   
-  
-  
-  
-  
+
+
+
 body {
 margin : 0;
-font-family :Inter, Arial;
+font-family :Inter, sans-serif;
 font-size : 110%;
 font-style : normal;
 font-weight : normal;
 color: rgb(20, 15, 2);
 background-color : rgb(240, 241, 244);}
-h1 , h2 {font-weight: inherit;}
 .intro {
 background : black;
 text-align : center;}
@@ -137,7 +135,7 @@ max-height: 50%;}
 .article {
 text-align: center;}
 #preview {
-max-width: 150%;
+max-width: 100%;
 padding-right:25%;
 padding-top: 12%;
 /*max-height: 80%;*/ 
@@ -151,7 +149,7 @@ padding-top: 12%;
 	line-height : 4;
 	font-size : 200%;
 	font-weight : bold;
-	font-family: berkshire_swashregular, Georgia;
+	font-family: berkshire_swashregular, serif;
 	word-spacing: .5em;
 	text-decoration:none}
 .article p{
@@ -170,7 +168,7 @@ text-align: center;}
 	line-height : 2.5;}
 .navigation {
 	background-color: black;
-	font-family: 'Playfair Design';}
+	font-family: 'Playfair Design' 'sans serif';}
 #menu li {
   display: inline;}
 #menu li::before {
@@ -209,33 +207,34 @@ padding: 2% 8%;
 margin-right:5%;
 margin-left: 5%;
 text-align:center;}
-
-
 .about{
 padding: 2% 8%; 
 text-align:center;}
+
+
 .about p{
-font-family: Inter;}
+font-family: Inter, sans-serif;}
 .main, aside, footer, header, nav{
 display:block;}
 footer {
 background-color: black;}
 .websiteinfo {
+font-family:'Playfair Display', 'sans serif';
 color : rgb(212, 212, 187);}
 .footer a:focus,
 .footer a:active, .footer a:hover  {
   color:navy;
   text-decoration: underline;}
 .content h1 , .aside h1 {
+font-family:'Playfair Display', serif;
 color: rgb(20, 15, 2);
-/*font-size : 110%;
-text-align : center;
-margin: 1% 0;
-padding: .5% 0 2% 0;*/}
+font-size: 1.5em;
+text-align : center;}
 .content h2 , aside h2 {
+font-family:'Playfair Display', serif;
 font-size : 1.1em;
 text-align : center;
-margin: 1% 0
+margin: 1% 0;
 color: rgb(20, 15, 2);}
 .content p , .related p {
 margin: 1% 0;
@@ -247,7 +246,7 @@ footer p a , footer p a:visited {color: black;}
   text-align: center;
   display:block;}
 .subjects h2, p{
-	font-family: arial;
+	font-family: sans-serif;
 	font-size:105%;
 	line-height: 2;
 	text-align: left;}
@@ -288,8 +287,7 @@ gap: 0;}
 @media screen and (min-width: 700px) {
 .articlespace {
 padding-left:25%;
-padding-top:5%;
-/*max-width: 40ch;*/
+/*padding-top:5%;*/
 text-align: left;}
 #preview  {
 max-width: 70%;
@@ -309,11 +307,13 @@ body  {
 font-size: 1em;}
 #menu {display: none;}
 body, .intro, .websiteinfo, a:link, a:visited, a:focus, a:hover, a:active{color: darkslategrey;}
-
-
 body, .intro, .websiteinfo  {
 background-color: transparent; }
 #sitename{font-style: normal;}
+
+
+
+
 .page{
 display: initial;}
 }
