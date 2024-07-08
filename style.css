@@ -1,18 +1,36 @@
+a:visited{
+color :maroon;}
+a:hover{
+outline: solid darkgreen;}
+a:focus, 
+a:active {
+outline: solid darkgreen;}
 blockquote {font-family:'Josefin Sansitialic', 'sans serif';
 font-size:110%;
 border-left: 10px solid grey;
 margin: 1.5em 10px;
 padding: 0.5em 10px;}
+
 .websiteinfo p {
 text-align : center;
 padding: 2% 0} 
 #removestyle{
 text-decoration: none;}
-  
-  
-  
-  
-  
+header a:link,
+header a:visited {
+  text-decoration: none;
+  color:lightblue;}
+header a:focus, 
+ a:active {
+text-decoration: underline;
+	color : gold;
+	outline: inherit;}	
+header a:hover {
+	text-decoration: underline;
+	color : gold;
+	outline: inherit;}
+header a:current {
+text-decoration: none; color: gold;}
 .nestedgrid {
 width: 100%;
 display: grid;
@@ -90,6 +108,11 @@ text-align: center;}
 .navigation { grid-area: navigation; }
 .main { grid-area: main; }
 .footer { grid-area: footer; }
+
+
+
+
+
 .skip {
   position: absolute;
   display: inline-block;
@@ -105,12 +128,6 @@ text-align: center;}
   white-space: nowrap;
   clip: rect(0 0 0 0);
   clip-path: inset(50%);}
-  
-  
-  
-
-
-
 body {
 margin : 0;
 font-family :Inter, sans-serif;
@@ -141,10 +158,8 @@ padding-top: 12%;
 /*max-height: 80%;*/ 
 /*display: none*/ }
 .articlespace {
-	text-align: left;
-    /*padding-left:25%;
-    padding-top:5%;*/}
-#sitename {
+	text-align: left;}
+.sitename {
 	color: rgb(125, 205, 225);
 	line-height : 4;
 	font-size : 200%;
@@ -155,10 +170,6 @@ padding-top: 12%;
 .article p{
 margin: 10%;
 text-align: center;}
-#sitename a:focus,
-#sitename a:active, a:hover {
-  color:gold;
-  text-decoration: underline;}
 #menu {
 	margin-left :5%;
 	padding-top: 2.8%;
@@ -195,13 +206,12 @@ text-decoration: underline;
 	outline: inherit;}
 #menu a:current {
 text-decoration: none; color: gold;}
-a:visited{
-color :maroon;}
-a:hover{
-outline: solid darkgreen;}
-a:focus, 
-a:active {
-outline: solid darkgreen;}
+
+
+
+
+
+
 .content , .related {
 padding: 2% 8%;
 margin-right:5%;
@@ -210,8 +220,6 @@ text-align:center;}
 .about{
 padding: 2% 8%; 
 text-align:center;}
-
-
 .about p{
 font-family: Inter, sans-serif;}
 .main, aside, footer, header, nav{
@@ -302,6 +310,7 @@ margin-left: 14%;
 margin-right:14%; 
 text-align:center;}
 }
+
 @media print  {
 body  { 
 font-size: 1em;}
@@ -310,10 +319,6 @@ body, .intro, .websiteinfo, a:link, a:visited, a:focus, a:hover, a:active{color:
 body, .intro, .websiteinfo  {
 background-color: transparent; }
 #sitename{font-style: normal;}
-
-
-
-
 .page{
 display: initial;}
 }
