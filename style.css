@@ -43,7 +43,7 @@ gap: 1em;
 grid-auto-flow: column;
 align-content: start;
 height: 100%;}
-.heading { grid-area: heading; }
+.heading { grid-area: heading;}
 .articlename { grid-area: articlename; }
 .summary { grid-area: summary; }
 .photo { grid-area: photo; }
@@ -111,7 +111,7 @@ font-family: Playfair Design sans serif; }
   background-color: white;
   color: black;}
   
-  .skip:not(:focus) {
+.skip:not(:focus) {
   height: 1px;
   width: 1px;
   overflow: hidden;
@@ -191,7 +191,7 @@ text-decoration: underline;
 	outline: inherit;}
 #menu a:current {
 text-decoration: none; color: gold;}
-.content , .related {
+.content {
 padding: 2% 8%;
 margin-right:5%;
 margin-left: 5%;
@@ -208,6 +208,7 @@ background-color: black;}
 .websiteinfo {
 font-family:'Playfair Display', sans serif;
 color : rgb(212, 212, 187);}
+
 
 
 
@@ -309,8 +310,8 @@ text-align:center;}
 body  { 
 font-size: 1em;}
 #menu {display: none;}
-body, .intro, .websiteinfo, a:link, a:visited, a:focus, a:hover, a:active{color: darkslategrey;}
 
+body, .intro, .websiteinfo, a:link, a:visited, a:focus, a:hover, a:active{color: darkslategrey;}
 body, .intro, .websiteinfo  {
 background-color: transparent; }
 #sitename{font-style: normal;}
