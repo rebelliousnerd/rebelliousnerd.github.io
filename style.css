@@ -139,7 +139,7 @@ float: left;
 margin-right: 1em;
 max-width: 25%;
 max-height: 25%;}
-.article {
+.article h1, h2{
 text-align: center;}
 #preview {
 max-width: 100%;
@@ -157,7 +157,8 @@ padding-top: 12%;}
 	text-decoration:none}
 .article p{
 margin: 10%;
-text-align: center;}
+text-align: left;
+font-size: 1.1em;}
 #menu {
 	margin-left :5%;
 	padding-top: 2.8%;
@@ -210,9 +211,6 @@ font-family:'Playfair Display', sans serif;
 color : rgb(212, 212, 187);}
 
 
-
-
-
 .footer a:focus,
 .footer a:active, .footer a:hover  {
   color:navy;
@@ -226,13 +224,13 @@ text-align : center;
 color: rgb(40, 28, 194);}
 .content h2 , aside h2 {
 font-family:'Playfair Display', serif;
-font-size : 1.1em;
+font-size : 1.25em;
 text-align : center;
-margin: 1% 0;
-color: rgb(20, 15, 2);}
+margin: 5% 0;
+color: rgb(40, 28, 194);}
 .content p {
 margin: 1% 0;
-font-family:Inter;
+font-family:Inter, sans-serif;
 line-height: 2;
 color: rgb(20, 15, 2);} 
 footer p a , footer p a:visited {color: black;}
@@ -252,9 +250,8 @@ footer p a , footer p a:visited {color: black;}
   content: "\200B";}
 time{
 	text-align: right;
-	font-family: Inter;
-	font-weight: bold;
-	font-size:1.2em;
+	font-family: Inter, sans-serif;
+	font-size:1em;
 	margin-top: .4em;
 	display: block;}
 	.subjects li a{
@@ -287,6 +284,10 @@ gap: 1em;
 grid-auto-flow: column;
 align-content: start;
 height: 100%;}
+.article p{
+margin: 2.5%;
+text-align: left;
+font-size: 1em;}
 }
 @media screen and (min-width: 700px) {
 .articlespace {
@@ -309,8 +310,8 @@ text-align:center;}
 @media print  {
 body  { 
 font-size: 1em;}
-#menu {display: none;}
 
+#menu {display: none;}
 body, .intro, .websiteinfo, a:link, a:visited, a:focus, a:hover, a:active{color: darkslategrey;}
 body, .intro, .websiteinfo  {
 background-color: transparent; }
