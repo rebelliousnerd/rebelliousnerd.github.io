@@ -249,6 +249,7 @@ footer p a , footer p a:visited {color: black;}
 .subjects li::before {
   content: "\200B";}
 time{
+	color: rgb(20, 15, 2;
 	text-align: right;
 	font-family: Inter, sans-serif;
 	font-size:1em;
@@ -307,10 +308,13 @@ margin-left: 14%;
 margin-right:14%; 
 text-align:center;}
 }
+
+
+
+
 @media print  {
 body  { 
 font-size: 1em;}
-
 #menu {display: none;}
 body, .intro, .websiteinfo, a:link, a:visited, a:focus, a:hover, a:active{color: darkslategrey;}
 body, .intro, .websiteinfo  {
