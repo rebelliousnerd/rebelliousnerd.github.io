@@ -86,7 +86,7 @@ visibility:hidden;}
     "main main" 1fr
     "footer footer" auto
     / 50% auto;
-  gap: 5px 0;}
+  gap:0;}
 #atitle{
   text-decoration: none;
   color:blue;
@@ -111,7 +111,7 @@ font-family: Playfair Design sans serif; }
   background-color: white;
   color: black;}
   
-.skip:not(:focus) {
+  .skip:not(:focus) {
   height: 1px;
   width: 1px;
   overflow: hidden;
@@ -121,7 +121,7 @@ font-family: Playfair Design sans serif; }
 body {
 margin : 0;
 font-family :Inter, sans-serif;
-font-size : 110%;
+font-size : 100%;
 font-style : normal;
 font-weight : normal;
 color: rgb(20, 15, 2);
@@ -234,20 +234,6 @@ font-family:Inter, sans-serif;
 line-height: 2;
 color: rgb(20, 15, 2);} 
 footer p a , footer p a:visited {color: black;}
-.subjects h2, p{
-	font-family: sans-serif;
-	font-size:105%;
-	line-height: 2;
-	text-align: left;}
-.subjects h1{ 
-	font-family: sans-serif;
-	font-weight: bold;
-	font-size:1.2em;
-	font-variant: normal;}
-.subjects li {
-  list-style: none;}
-.subjects li::before {
-  content: "\200B";}
 time{
 	color: rgb(20, 15, 2);
 	text-align: right;
@@ -255,23 +241,24 @@ time{
 	font-size:1em;
 	margin-top: .4em;
 	display: block;}
-	.subjects li a{
-font-weight: bolder;}
 @media screen and (max-width: 520px) {
-#menu a {/*padding: 0.5em 7.5em;*/
-text-align: center;
-font-weight: bold;}	
+#menu a {
+	color : lightblue;
+	font-weight : bold;
+	padding : 4.75% 1.80%;
+	padding-right: 10%;
+	text-decoration : none;}
 .layout {
 width: 100%;
 height: 100%;
 display: grid;
 grid:
-"header" auto
-"navigation" auto
-"main" 1fr
-"footer" auto
-/ 1fr;
-gap: 0;}
+"header header" auto 
+"navigation navigation" auto
+"main main" 1fr
+    "footer footer" auto
+    / 50% auto;
+  gap:0;}
 .nestedgrid {
 width: 100%;
 display: grid;
@@ -298,8 +285,7 @@ text-align: left;}
 max-width: 70%;
 max-height: 70%;
 padding-right:25%;
-padding-top: 8%;
-display: block;}
+padding-top: 8%;}
 }
 @media screen and (min-width: 785px) {
 .content {
@@ -308,10 +294,6 @@ margin-left: 14%;
 margin-right:14%; 
 text-align:center;}
 }
-
-
-
-
 @media print  {
 body  { 
 font-size: 1em;}
