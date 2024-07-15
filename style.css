@@ -5,45 +5,25 @@ outline: solid darkgreen;}
 a:focus, 
 a:active {
 outline: solid darkgreen;}
-blockquote {font-family:'Josefin Sansitialic', sans serif;
-font-size:110%;
-border-left: 0.7em solid grey;
-margin: 150% 107%;
-padding: 0.5em 0.7em;}
-
 .websiteinfo p {
 text-align : center;
 padding: 2% 0} 
 #removestyle{
 text-decoration: none;}
-header a:link,
-header a:visited {
-  text-decoration: none;
-  color:lightblue;}
-header a:focus, 
- a:active {
-text-decoration: underline;
-	color : gold;
-	outline: inherit;}	
-header a:hover {
-	text-decoration: underline;
-	color : gold;
-	outline: inherit;}
-header a:current {
-text-decoration: none; color: gold;}
+
 .nestedgrid {
 width: 100%;
 display: grid;
 grid:
-"heading heading" auto
 "articlename articlename" auto
+"date date" auto
 "summary photo" auto
 / auto;
 gap: 1em;
 grid-auto-flow: column;
 align-content: start;
 height: 100%;}
-.heading { grid-area: heading;}
+.heading { grid-area: date;}
 .articlename { grid-area: articlename; }
 .summary { grid-area: summary; }
 .photo { grid-area: photo; }
@@ -56,6 +36,11 @@ blockquote:before {
   vertical-align: -0.4em;}
 blockquote p {
  display: inline;}
+ blockquote {font-family:'Josefin Sansitialic', sans serif;
+font-size:110%;
+border-left: 0.7em solid grey;
+margin: 150% 107%;
+padding: 0.5em 0.7em;}
 figure {padding-top:2.5%;}
 figcaption {font-family:Inter, sans-serif;
 font-size: 100%;
@@ -75,8 +60,6 @@ text-align: center;}
   font-size: 100%;
   border-radius: 20%;
   margin-left:10% }	
-.nodisplay {
-visibility:hidden;}
 .layout {
   width: 100%;
   min-height: 100vh;
@@ -85,7 +68,7 @@ visibility:hidden;}
     "header navigation" auto
     "main main" 1fr
     "footer footer" auto
-    / 50% auto;
+    / auto;
   gap:0;}
 #atitle{
   text-decoration: none;
@@ -97,20 +80,46 @@ visibility:hidden;}
   text-decoration: none;
   color: blue;}
 .header { grid-area: header; }
+/*header a:link,
+header a:visited {
+  text-decoration: none;
+  color:lightblue;}
+header a:focus, 
+ a:active {
+text-decoration: underline;
+	color : gold;
+	outline: inherit;}	
+header a:hover {
+	text-decoration: underline;
+	color : gold;
+	outline: inherit;}
+header a:current {
+text-decoration: none; color: gold;}*/
 .navigation { grid-area: navigation;
 background-color: black;
 font-family: Playfair Design sans serif; }
 .main { grid-area: main; }
-.footer { grid-area: footer; }
+.footer { grid-area: footer;
+background-color: black; }
+.footer a:focus,
+.footer a:active, .footer a:hover  {
+  color:navy;
+  text-decoration: underline;}
+  footer p a , footer p a:visited {color: black;}
+  
+  
+  
+  
+  
+  
 .skip {
   position: absolute;
   display: inline-block;
-  padding: .375rem .75rem;
+  padding: .400rem .75rem;
   line-height: 1;
   font-size: 1.25rem;
   background-color: white;
   color: black;}
-  
   .skip:not(:focus) {
   height: 1px;
   width: 1px;
@@ -141,13 +150,17 @@ max-width: 25%;
 max-height: 25%;}
 .article h1, h2{
 text-align: center;}
+.article p{
+margin: 10%;
+text-align: left;
+font-size: 1.1em;}
 #preview {
 max-width: 100%;
 padding-right:25%;
 padding-top: 12%;}
 .articlespace {
 	text-align: left;}
-.sitename {
+#sitename {
 	color: rgb(125, 205, 225);
 	line-height : 4;
 	font-size : 200%;
@@ -155,10 +168,6 @@ padding-top: 12%;}
 	font-family: berkshire_swashregular, serif;
 	word-spacing: .5em;
 	text-decoration:none}
-.article p{
-margin: 10%;
-text-align: left;
-font-size: 1.1em;}
 #menu {
 	margin-left :5%;
 	padding-top: 2.8%;
@@ -200,21 +209,15 @@ text-align:center;}
 .about{
 padding: 2% 8%; 
 text-align:center;}
+
+
 .about p{
 font-family: Inter, sans-serif;}
-main, aside, footer, header, nav{
-display:block;}
-footer {
-background-color: black;}
+/*main, aside, footer, header, nav{
+display:block;}*/
 .websiteinfo {
 font-family:'Playfair Display', sans serif;
 color : rgb(212, 212, 187);}
-
-
-.footer a:focus,
-.footer a:active, .footer a:hover  {
-  color:navy;
-  text-decoration: underline;}
 #heading h1 {
 color: rgb(20, 15, 2);}
 .content h1 , .title h1 {
@@ -233,7 +236,6 @@ margin: 1% 0;
 font-family:Inter, sans-serif;
 line-height: 2;
 color: rgb(20, 15, 2);} 
-footer p a , footer p a:visited {color: black;}
 time{
 	color: rgb(20, 15, 2);
 	text-align: right;
@@ -257,14 +259,14 @@ grid:
 "navigation navigation" auto
 "main main" 1fr
     "footer footer" auto
-    / 50% auto;
+    / auto;
   gap:0;}
 .nestedgrid {
 width: 100%;
 display: grid;
 grid:
-"heading heading" auto
 "articlename articlename" auto
+"date date" auto
 "photo photo" auto
 "summary summary" auto
 / auto;
@@ -302,6 +304,4 @@ body, .intro, .websiteinfo, a:link, a:visited, a:focus, a:hover, a:active{color:
 body, .intro, .websiteinfo  {
 background-color: transparent; }
 #sitename{font-style: normal;}
-.page{
-display: initial;}
 }
