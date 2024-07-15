@@ -5,9 +5,11 @@ outline: solid darkgreen;}
 a:focus, 
 a:active {
 outline: solid darkgreen;}
- 
-#removestyle{
+ #removestyle{
 text-decoration: none;}
+
+
+
 
 .nestedgrid {
 width: 100%;
@@ -106,6 +108,10 @@ font-family: Playfair Design sans serif; }
 .main { grid-area: main; }
 .footer { grid-area: footer;
 background-color: black; }
+
+
+
+
 .footer a:focus,
 .footer a:active, .footer a:hover  {
   color:navy;
@@ -145,7 +151,7 @@ max-height: 25%;}
 #aboutmeimg  {
 float: left;    
 margin-right: 1em;
-max-width: 25%;
+max-width: 40%;
 max-height: 25%;}
 .article h1, h2{
 text-align: center;}
@@ -160,7 +166,6 @@ padding-top: 12%;}
 .articlespace {
 	text-align: left;}
 .sitename {
-	color: rgb(125, 205, 225) /*!important*/;
 	line-height : 4;
 	font-size : 200%;
 	font-weight : bold;
@@ -168,7 +173,7 @@ padding-top: 12%;}
 	word-spacing: .5em;
 	text-decoration:none}
 #menu {
-	font-family: BebasNeue, sans-serif;
+	font-family: Libre Baskerville, sans-serif;
 	margin-left :5%;
 	padding-top: 2.8%;
 	list-style : none;
@@ -201,17 +206,20 @@ text-decoration: underline;
 	outline: inherit;}
 #menu a:current {
 text-decoration: none; color: gold;}
+
+
+
+
+
 .content {
 padding: 2% 8%;
 margin-right:5%;
 margin-left: 5%;
 text-align:center;}
-.about{
+#about{
 padding: 2% 8%; 
-text-align:center;}
-
-
-.about p{
+text-align:left;}
+#about p{
 font-family: Inter, sans-serif;}
 .websiteinfo {
 font-family:'Playfair Display', sans serif;
@@ -301,6 +309,8 @@ text-align:center;}
 body  { 
 font-size: 1em;}
 #menu {display: none;}
+
+
 body, .intro, .websiteinfo, a:link, a:visited, a:focus, a:hover, a:active{color: darkslategrey;}
 body, .intro, .websiteinfo  {
 background-color: transparent; }
