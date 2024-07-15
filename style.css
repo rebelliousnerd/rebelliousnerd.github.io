@@ -5,9 +5,7 @@ outline: solid darkgreen;}
 a:focus, 
 a:active {
 outline: solid darkgreen;}
-.websiteinfo p {
-text-align : center;
-padding: 2% 0} 
+ 
 #removestyle{
 text-decoration: none;}
 
@@ -15,6 +13,7 @@ text-decoration: none;}
 width: 100%;
 display: grid;
 grid:
+"heading heading" auto
 "articlename articlename" auto
 "date date" auto
 "summary photo" auto
@@ -23,7 +22,7 @@ gap: 1em;
 grid-auto-flow: column;
 align-content: start;
 height: 100%;}
-.heading { grid-area: date;}
+.heading { grid-area: heading;}
 .articlename { grid-area: articlename; }
 .summary { grid-area: summary; }
 .photo { grid-area: photo; }
@@ -80,21 +79,27 @@ text-align: center;}
   text-decoration: none;
   color: blue;}
 .header { grid-area: header; }
-/*header a:link,
-header a:visited {
+.header a {
+	color : rgb(125, 205, 225);
+	font-weight : bold;
+	padding : 4.75% 1.80%;
+	padding-right: 10%;
+	text-decoration : none;}
+.header a:link,
+.header a:visited {
   text-decoration: none;
-  color:lightblue;}
-header a:focus, 
+  color:rgb(125, 205, 225);}
+.header a:focus, 
  a:active {
 text-decoration: underline;
 	color : gold;
 	outline: inherit;}	
-header a:hover {
+.header a:hover {
 	text-decoration: underline;
 	color : gold;
 	outline: inherit;}
-header a:current {
-text-decoration: none; color: gold;}*/
+.header a:current {
+text-decoration: none; color: gold;}
 .navigation { grid-area: navigation;
 background-color: black;
 font-family: Playfair Design sans serif; }
@@ -106,13 +111,7 @@ background-color: black; }
   color:navy;
   text-decoration: underline;}
   footer p a , footer p a:visited {color: black;}
-  
-  
-  
-  
-  
-  
-.skip {
+  .skip {
   position: absolute;
   display: inline-block;
   padding: .400rem .75rem;
@@ -160,8 +159,8 @@ padding-right:25%;
 padding-top: 12%;}
 .articlespace {
 	text-align: left;}
-#sitename {
-	color: rgb(125, 205, 225);
+.sitename {
+	color: rgb(125, 205, 225) /*!important*/;
 	line-height : 4;
 	font-size : 200%;
 	font-weight : bold;
@@ -169,6 +168,7 @@ padding-top: 12%;}
 	word-spacing: .5em;
 	text-decoration:none}
 #menu {
+	font-family: BebasNeue, sans-serif;
 	margin-left :5%;
 	padding-top: 2.8%;
 	list-style : none;
@@ -213,11 +213,12 @@ text-align:center;}
 
 .about p{
 font-family: Inter, sans-serif;}
-/*main, aside, footer, header, nav{
-display:block;}*/
 .websiteinfo {
 font-family:'Playfair Display', sans serif;
 color : rgb(212, 212, 187);}
+.websiteinfo p {
+text-align : center;
+padding: 2% 0}
 #heading h1 {
 color: rgb(20, 15, 2);}
 .content h1 , .title h1 {
@@ -265,8 +266,8 @@ grid:
 width: 100%;
 display: grid;
 grid:
+"heading heading" auto
 "articlename articlename" auto
-"date date" auto
 "photo photo" auto
 "summary summary" auto
 / auto;
