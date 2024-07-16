@@ -37,21 +37,20 @@ blockquote:before {
   vertical-align: -0.4em;}
 blockquote p {
  display: inline;}
- blockquote {font-family:'Josefin Sansitialic', sans serif;
+ blockquote {font-family:Josefinsansitialic, sans-serif;
 font-size:110%;
 border-left: 0.7em solid grey;
 margin: 150% 107%;
 padding: 0.5em 0.7em;}
 figure {padding-top:2.5%;}
-figcaption {font-family:Inter, sans-serif;
-font-size: 100%;
-font-style: italic;
+figcaption {font-family:Interitialic, sans-serif;
+font-size: 1.2em;
 line-height: 1.5;
 text-align: center;}
 .email {
-  font-family: Playfair Display sans serif;
+  font-family: Playfairdisplay, sans-serif;
   font-weight: bold;
-  background-color:lightblue ;
+  background-color:white ;
   border: none;
   color: black;
   padding: .5em .5em;
@@ -74,7 +73,7 @@ text-align: center;}
 #atitle{
   text-decoration: none;
   color:blue;
-  font-size : 125%;
+  font-size : 1.5em;
   font-weight: bold;}
 #atitle a:link,
 #atitle a:visited {
@@ -103,11 +102,11 @@ text-decoration: underline;
 .header a:current {
 text-decoration: none; color: gold;}
 .navigation { grid-area: navigation;
-background-color: black;
-font-family: Playfair Design sans serif; }
+background-color: black; }
 .main { grid-area: main; }
 .footer { grid-area: footer;
-background-color: black; }
+background-color: black;
+font-size:1.1em; }
 
 
 
@@ -151,8 +150,8 @@ max-height: 25%;}
 #aboutmeimg  {
 float: left;    
 margin-right: 1em;
-max-width: 40%;
-max-height: 25%;}
+max-width: 28%;
+max-height: 40%;}
 .article h1, h2{
 text-align: center;}
 .article p{
@@ -173,7 +172,7 @@ padding-top: 12%;}
 	word-spacing: .5em;
 	text-decoration:none}
 #menu {
-	font-family: Libre Baskerville, sans-serif;
+	font-family: Librebaskervillebold, sans-serif;
 	margin-left :5%;
 	padding-top: 2.8%;
 	list-style : none;
@@ -187,7 +186,6 @@ padding-top: 12%;}
 li.current a {color: grey;}
 #menu a {
 	color : lightblue;
-	font-weight : bold;
 	padding : 4.75% 1.80%;
 	padding-right: 10%;
 	text-decoration : none;}
@@ -206,37 +204,35 @@ text-decoration: underline;
 	outline: inherit;}
 #menu a:current {
 text-decoration: none; color: gold;}
+#about{
+margin-right: 25%;
+margin-top: 2em;
+padding: 0;}
 
 
 
 
-
+.websiteinfo {
+font-family:Playfairdisplay, sans-serif;
+color : rgb(212, 212, 187);}
+.websiteinfo p {
+text-align :center;
+padding: 2% 0}
+#heading h1 {
+color: rgb(20, 15, 2);}
 .content {
 padding: 2% 8%;
 margin-right:5%;
 margin-left: 5%;
 text-align:center;}
-#about{
-padding: 2% 8%; 
-text-align:left;}
-#about p{
-font-family: Inter, sans-serif;}
-.websiteinfo {
-font-family:'Playfair Display', sans serif;
-color : rgb(212, 212, 187);}
-.websiteinfo p {
-text-align : center;
-padding: 2% 0}
-#heading h1 {
-color: rgb(20, 15, 2);}
 .content h1 , .title h1 {
-font-family:'Playfair Display', sans serif;;
-font-size: 1.5em;
+font-family:Playfairdisplay, sans-serif;;
+font-size: 1.7em;
 text-align : center;
 color: rgb(40, 28, 194);}
 .content h2 , aside h2 {
-font-family:'Playfair Display', serif;
-font-size : 1.25em;
+font-family:Playfairdisplay, serif;
+font-size : 1.5em;
 text-align : center;
 margin: 5% 0;
 color: rgb(40, 28, 194);}
@@ -244,7 +240,9 @@ color: rgb(40, 28, 194);}
 margin: 1% 0;
 font-family:Inter, sans-serif;
 line-height: 2;
-color: rgb(20, 15, 2);} 
+color: rgb(20, 15, 2);
+text-align: left;
+font-size: 1.2em} 
 time{
 	color: rgb(20, 15, 2);
 	text-align: right;
@@ -287,6 +285,10 @@ height: 100%;}
 margin: 2.5%;
 text-align: left;
 font-size: 1em;}
+#about{
+padding-left: 2.2em;}
+#aboutmeimg  {
+max-width: 45%;}
 }
 @media screen and (min-width: 700px) {
 .articlespace {
@@ -308,9 +310,8 @@ text-align:center;}
 @media print  {
 body  { 
 font-size: 1em;}
+
 #menu {display: none;}
-
-
 body, .intro, .websiteinfo, a:link, a:visited, a:focus, a:hover, a:active{color: darkslategrey;}
 body, .intro, .websiteinfo  {
 background-color: transparent; }
