@@ -20,7 +20,7 @@ grid:
 "date date" auto
 "summary photo" auto
 / auto;
-gap: 1em;
+gap: 1rem;
 grid-auto-flow: column;
 align-content: start;
 height: 100%;}
@@ -34,18 +34,22 @@ height: 100%;}
 	text-align: center;
 	font-family: Inter, sans-serif;
 	font-size:1.1rem;
-	margin-top: .4rem;}
+	margin-top: .4rem;
+	line-height: 0}
+#articledate {
+	text-align: center;
+	font-size:1.1rem;}
 blockquote:before {
   color: navy;
   content: open-quote;
-  font-size: 2em;
+  font-size: 2rem;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;}
   blockquote:after {
   color: navy;
   content: close-quote;
-  font-size: 2em;
+  font-size: 2rem;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;}
@@ -60,7 +64,7 @@ margin-right:5%;
 margin-left: 5%;}
 figure {padding-top:2.5%;}
 figcaption {font-family:Interitialic, sans-serif;
-font-size: 1.2em;
+font-size: 1.2rem;
 line-height: 1.5;
 text-align: center;}
 .email {
@@ -69,7 +73,7 @@ text-align: center;}
   background-color:white ;
   border: none;
   color: black;
-  padding: .5em .5em;
+  padding: .5rem .5rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -89,8 +93,9 @@ text-align: center;}
 #atitle{
   text-decoration: none;
   color:blue;
-  font-size : 1.5em;
-  font-weight: bold;}
+  font-size : 1.5rem;
+  font-weight: bold;
+  line-height: 0}
 #atitle a:link,
 #atitle a:visited {
   text-decoration: none;
@@ -102,17 +107,17 @@ text-align: center;}
 	padding : 4.75% 1.80%;
 	padding-right: 10%;
 	text-decoration : none;}
+	
+	
+	
+	
+	
 .header a:link,
 .header a:visited {
   text-decoration: none;
   color:rgb(125, 205, 225);}
 .header a:focus, 
-
-
-
-
-
- a:active {
+a:active {
 text-decoration: underline;
 	color : gold;
 	outline: inherit;}	
@@ -158,15 +163,13 @@ color: rgb(20, 15, 2);
 background-color : rgb(240, 241, 244);}
 .intro {
 background : black;
-text-align : center;}
-.intro p {
 text-align: center;}
 .responsiveimg {
 max-width: 25%;
 max-height: 25%;}
 #aboutmeimg  {
 float: left;    
-margin-right: 1em;
+margin-right: 1rem;
 max-width: 28%;
 max-height: 40%;}
 .article h1, h2{
@@ -174,7 +177,7 @@ text-align: center;}
 .article p{
 margin: 10%;
 text-align: left;
-font-size: 1.1em;}
+font-size: 1.1rem;}
 #preview {
 max-width: 100%;
 padding-right:25%;
@@ -183,10 +186,10 @@ padding-top: 12%;}
 	text-align: left;}
 .sitename {
 	line-height : 4;
-	font-size : 200%;
+	font-size : 2rem;
 	font-weight : bold;
 	font-family: berkshire_swashregular, serif;
-	word-spacing: .5em;
+	word-spacing: .5rem;
 	text-decoration:none}
 #menu {
 	font-family: Librebaskervillebold, sans-serif;
@@ -194,7 +197,7 @@ padding-top: 12%;}
 	padding-top: 2.8%;
 	list-style : none;
 	overflow : hidden;
-	font-size : 150%;
+	font-size : 1.5rem;
 	line-height : 2.5;}
 #menu li {
   display: inline;}
@@ -206,11 +209,12 @@ li.current a {color: grey;}
 	padding : 4.75% 1.80%;
 	padding-right: 10%;
 	text-decoration : none;}
+	
+	
 #menu a:link,
 #menu a:visited {
   text-decoration: none;
   color:lightblue;}
-  
 #menu a:focus, 
  a:active {
 text-decoration: underline;
@@ -233,7 +237,8 @@ color : rgb(212, 212, 187);}
 text-align :center;
 padding: 2% 0}
 #heading h1 {
-color: rgb(20, 15, 2);}
+color: rgb(20, 15, 2);
+line-height: 0;}
 .content {
 padding: 2% 8%;
 margin-right:5%;
@@ -241,12 +246,12 @@ margin-left: 5%;
 text-align:center;}
 .content h1 , .title h1 {
 font-family:Playfairdisplay, sans-serif;;
-font-size: 1.7em;
+font-size: 1.7rem;
 text-align : center;
 color: rgb(40, 28, 194);}
 .content h2 , aside h2 {
 font-family:Playfairdisplay, serif;
-font-size : 1.5em;
+font-size : 1.5rem;
 text-align : center;
 margin: 5% 0;
 color: rgb(40, 28, 194);}
@@ -256,7 +261,7 @@ font-family:Inter, sans-serif;
 line-height: 2;
 color: rgb(20, 15, 2);
 text-align: left;
-font-size: 1.2em} 
+font-size: 1.2rem} 
 @media screen and (max-width: 520px) {
 #menu a {
 	color : lightblue;
@@ -304,13 +309,11 @@ margin-bottom:2rem;
 margin-top:2rem;}
 }
 @media screen and (min-width: 700px) {
+	
+	
 .articlespace {
 padding-left:25%;
 text-align: left;}
-
-
-
-
 #preview  {
 max-width: 70%;
 max-height: 70%;
