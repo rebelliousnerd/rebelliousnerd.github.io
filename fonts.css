@@ -158,7 +158,7 @@
     font-display: swap;}
 @font-face {
     font-family: 'Montserratbolditialic';
-    src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'),,
+    src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'),
         url('Montserrat-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
@@ -179,7 +179,7 @@
     font-display: swap;}
 @font-face {
     font-family: 'Montserratextralightitialic';
-    src: local('Montserrat ExtraLight Italic'), local('Montserrat-ExtraLightItalic')
+    src: local('Montserrat ExtraLight Italic'), local('Montserrat-ExtraLightItalic'),
         url('Montserrat-ExtraLightItalic.woff2') format('woff2');
     font-weight: 200;
     font-style: italic;
@@ -230,7 +230,7 @@
 @font-face {
     font-family: 'Mulibold';
     src: local('Muli Bold'), local('Muli-Bold'),
-        url('Muli-Bold.woff2') format('woff2'),);
+        url('Muli-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;}
@@ -335,27 +335,6 @@
     font-weight: bold;
     font-style: normal;
     font-display: swap;}
-@font-face {
-    font-family: 'Josefinsansitialic';
-    src: local('Josefin Sans Italic'), local('JosefinSans-Italic'),
-        url('JosefinSans-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;}
-@font-face {
-    font-family: 'Josefinsansbolditialic';
-    src: local('Josefin Sans Bold Italic'), local('JosefinSans-BoldItalic'),
-        url('JosefinSans-BoldItalic.woff2') format('woff2');
-    font-weight: bold;
-    font-style: italic;
-    font-display: swap;}
-@font-face {
-    font-family: 'Josefinsansbold';
-    src: local('Josefin Sans SemiBold'), local('JosefinSans-SemiBold'),
-        url('JosefinSans-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;}
     @font-face {
     font-family: 'Playfairdisplaybold';
     src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
@@ -373,7 +352,7 @@
     @font-face {
     font-family: 'Playfairdisplayitialic';
     src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'),
-         url('PlayfairDisplay-Italic.woff2') format('woff2'));
+         url('PlayfairDisplay-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
     font-display: swap;}
@@ -405,12 +384,6 @@
     font-weight: bold;
     font-style: italic;
     font-display: swap;}
-    
-    
-    
-    
-    
-    
 @font-face {
     font-family: 'Latoitalic';
     src: local('Lato Italic'), local('Lato-Italic'),
@@ -420,7 +393,7 @@
     font-display: swap;}
 @font-face {
     font-family: 'LatoBlackitalic';
-    src: local('Lato Black Italic'), local('Lato-BlackItalic'),,
+    src: local('Lato Black Italic'), local('Lato-BlackItalic'),
         url('Lato-BlackItalic.woff2') format('woff2');
     font-weight: 900;
     font-style: italic;
@@ -432,6 +405,13 @@
     font-weight: 900;
     font-style: normal;
     font-display: swap;}
+    
+    
+    
+    
+    
+    
+    
 @font-face {
     font-family: 'Latobold';
     src: local('Lato Bold'), local('Lato-Bold'),
@@ -439,7 +419,7 @@
     font-weight: bold;
     font-style: normal;
     font-display: swap;}
-    @font-face {
+@font-face {
 font-family: 'berkshire_swashregular';
 src: url('berkshireswash-regular-webfont.woff2') format('woff2');
 font-weight: normal;

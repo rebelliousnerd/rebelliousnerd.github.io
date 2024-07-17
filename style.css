@@ -30,25 +30,34 @@ height: 100%;}
 .summary { grid-area: summary; }
 .photo { grid-area: photo; }
 #date {
-color: rgb(20, 15, 2);
+    color: rgb(20, 15, 2);
 	text-align: center;
 	font-family: Inter, sans-serif;
 	font-size:1.1rem;
 	margin-top: .4rem;}
 blockquote:before {
-  color: grey;
+  color: navy;
   content: open-quote;
-  font-size: 4em;
+  font-size: 2em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;}
+  blockquote:after {
+  color: navy;
+  content: close-quote;
+  font-size: 2em;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;}
 blockquote p {
  display: inline;}
- blockquote {font-family:Josefinsansitialic, sans-serif;
-font-size:110%;
-border-left: 0.7em solid grey;
-margin: 150% 107%;
-padding: 0.5em 0.7em;}
+ blockquote {font-family:lato, sans-serif;
+background-color: azure;
+font-size:1.2rem;
+border-left: 0.7em solid navy;
+padding: 2% 8%;
+margin-right:5%;
+margin-left: 5%;}
 figure {padding-top:2.5%;}
 figcaption {font-family:Interitialic, sans-serif;
 font-size: 1.2em;
@@ -64,7 +73,7 @@ text-align: center;}
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 100%;
+  font-size: 1rem;
   border-radius: 20%;
   margin-left:10% }	
 .layout {
@@ -98,6 +107,11 @@ text-align: center;}
   text-decoration: none;
   color:rgb(125, 205, 225);}
 .header a:focus, 
+
+
+
+
+
  a:active {
 text-decoration: underline;
 	color : gold;
@@ -110,7 +124,6 @@ text-decoration: underline;
 text-decoration: none; color: gold;}
 .navigation { grid-area: navigation;
 background-color: black; }
-
 .main { grid-area: main; }
 .footer { grid-area: footer;
 background-color: black;
@@ -197,6 +210,7 @@ li.current a {color: grey;}
 #menu a:visited {
   text-decoration: none;
   color:lightblue;}
+  
 #menu a:focus, 
  a:active {
 text-decoration: underline;
@@ -208,14 +222,10 @@ text-decoration: underline;
 	outline: inherit;}
 #menu a:current {
 text-decoration: none; color: gold;}
-
-
-
-
 #about{
-margin-right: 25%;
-margin-top: 2em;
-padding: 0;}
+/*margin-right: 25%;*/
+margin-top: 2rem;
+/*padding: 0;*/}
 .websiteinfo {
 font-family:Playfairdisplay, sans-serif;
 color : rgb(212, 212, 187);}
@@ -247,8 +257,6 @@ line-height: 2;
 color: rgb(20, 15, 2);
 text-align: left;
 font-size: 1.2em} 
-.date{
-	}
 @media screen and (max-width: 520px) {
 #menu a {
 	color : lightblue;
@@ -282,9 +290,9 @@ grid-auto-flow: column;
 align-content: start;
 height: 100%;}
 .article p{
-margin: 2.5%;
+/*margin: 2.5%;
 text-align: left;
-font-size: 1em;}
+font-size: 1.1rem;*/}
 #about{
 padding-left: 2.2rem;
 padding-right:2.2rem;
@@ -299,6 +307,10 @@ margin-top:2rem;}
 .articlespace {
 padding-left:25%;
 text-align: left;}
+
+
+
+
 #preview  {
 max-width: 70%;
 max-height: 70%;
@@ -306,12 +318,6 @@ padding-right:25%;
 padding-top: 8%;}
 }
 @media screen and (min-width: 785px) {
-	
-	
-	
-	
-	
-	
 .content {
 padding: 2% 8%;
 margin-left: 14%;
