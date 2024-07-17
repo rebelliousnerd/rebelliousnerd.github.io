@@ -26,8 +26,15 @@ align-content: start;
 height: 100%;}
 .heading { grid-area: heading;}
 .articlename { grid-area: articlename; }
+.date { grid-area: date;}
 .summary { grid-area: summary; }
 .photo { grid-area: photo; }
+#date {
+color: rgb(20, 15, 2);
+	text-align: center;
+	font-family: Inter, sans-serif;
+	font-size:1.1rem;
+	margin-top: .4rem;}
 blockquote:before {
   color: grey;
   content: open-quote;
@@ -103,14 +110,11 @@ text-decoration: underline;
 text-decoration: none; color: gold;}
 .navigation { grid-area: navigation;
 background-color: black; }
+
 .main { grid-area: main; }
 .footer { grid-area: footer;
 background-color: black;
-font-size:1.1em; }
-
-
-
-
+font-size:1.2rem; }
 .footer a:focus,
 .footer a:active, .footer a:hover  {
   color:navy;
@@ -204,14 +208,14 @@ text-decoration: underline;
 	outline: inherit;}
 #menu a:current {
 text-decoration: none; color: gold;}
+
+
+
+
 #about{
 margin-right: 25%;
 margin-top: 2em;
 padding: 0;}
-
-
-
-
 .websiteinfo {
 font-family:Playfairdisplay, sans-serif;
 color : rgb(212, 212, 187);}
@@ -243,13 +247,8 @@ line-height: 2;
 color: rgb(20, 15, 2);
 text-align: left;
 font-size: 1.2em} 
-time{
-	color: rgb(20, 15, 2);
-	text-align: right;
-	font-family: Inter, sans-serif;
-	font-size:1em;
-	margin-top: .4em;
-	display: block;}
+.date{
+	}
 @media screen and (max-width: 520px) {
 #menu a {
 	color : lightblue;
@@ -273,6 +272,7 @@ width: 100%;
 display: grid;
 grid:
 "heading heading" auto
+"date date" auto
 "articlename articlename" auto
 "photo photo" auto
 "summary summary" auto
@@ -286,9 +286,14 @@ margin: 2.5%;
 text-align: left;
 font-size: 1em;}
 #about{
-padding-left: 2.2em;}
-#aboutmeimg  {
-max-width: 45%;}
+padding-left: 2.2rem;
+padding-right:2.2rem;
+margin: 0.4rem;}
+#aboutmeimg {
+max-width: 58%;
+float: none;
+margin-bottom:2rem;
+margin-top:2rem;}
 }
 @media screen and (min-width: 700px) {
 .articlespace {
@@ -301,6 +306,12 @@ padding-right:25%;
 padding-top: 8%;}
 }
 @media screen and (min-width: 785px) {
+	
+	
+	
+	
+	
+	
 .content {
 padding: 2% 8%;
 margin-left: 14%;
@@ -310,7 +321,6 @@ text-align:center;}
 @media print  {
 body  { 
 font-size: 1em;}
-
 #menu {display: none;}
 body, .intro, .websiteinfo, a:link, a:visited, a:focus, a:hover, a:active{color: darkslategrey;}
 body, .intro, .websiteinfo  {
