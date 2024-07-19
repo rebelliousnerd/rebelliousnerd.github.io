@@ -38,29 +38,34 @@ text-align: left;}
 #atitle a:visited {
   text-decoration: none;
   color: blue;}
-blockquote:before {
+#blockquote:before {
   color: navy;
   content: open-quote;
   font-size: 2rem;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;}
-blockquote:after {
+#blockquote:after {
   color: navy;
   content: close-quote;
   font-size: 2rem;
   line-height: 0.1em;
   margin-right: 0.25em;
   vertical-align: -0.4em;}
-blockquote p {
+#blockquote p{
+ font-family:lato, sans-serif;
+ display: inline;
+ font-size: 1.2rem;
+ margin:auto;
+ line-height: 1.5;
+ text-align: left;
  display: inline;}
-blockquote {font-family:lato, sans-serif;
+#blockquote {
 background-color: lightgrey;
 font-size:1.2rem;
-border-left: 0.7em solid navy;
-padding: 2% 8%;
-margin-right:5%;
-margin-left: 5%;}
+border-left: 0.7rem solid navy;
+padding:1rem 0;
+margin-left: auto;}
 body {
 margin : 0;
 font-family :Inter, sans-serif;
@@ -100,6 +105,12 @@ font-size: 1.2rem}
 	font-size:1.1rem;
 	margin-top: .4rem;
 	line-height: 0}
+	
+	
+	
+	
+	
+	
 .email {
   font-family: Playfairdisplay, sans-serif;
   color: rgb(212, 212, 187);
@@ -110,7 +121,6 @@ font-size: 1.2rem}
   font-size: 1rem;
   margin-left:10% }
 figure {padding-top:2.5%;}
-
 figcaption {font-family:Interitialic, sans-serif;
 font-size: 1.2rem;
 line-height: 1.5;
@@ -129,6 +139,9 @@ footer p a , footer p a:visited {color: rgb(212, 212, 187);}
   text-decoration: underline;
   outline: solid azure;}
 footer p a , footer p a:visited {color: rgb(212, 212, 187);}
+.gridimg {
+object-fit:contain;
+-o-object-fit:contain;}
 .header { grid-area: header; }
 .header a {
 	color : rgb(125, 205, 225);
@@ -194,6 +207,10 @@ text-decoration: underline;
 text-decoration: none; color: gold;}
 #menu li {
   display: inline;}
+  
+  
+  
+  
 #menu li::before {
   content: "\200B";}
 li.current a {color: grey;}
@@ -204,13 +221,6 @@ li.current a {color: grey;}
 	text-decoration : none;}
 .navigation { grid-area: navigation;
 background-color: black; }
-
-
-
-
-
-
-
 .nestedgrid {
 width: 100%;
 display: grid;
@@ -224,11 +234,9 @@ gap: 1rem;
 grid-auto-flow: column;
 align-content: start;
 height: 100%;}
-.photo { grid-area: photo; }
+photo { grid-area: photo; }
 #preview {
-max-width: 100%;
-padding-right:25%;
-padding-top: 12%;}
+max-width: 100%;}
 #removestyle{
 text-decoration: none;}
 .responsiveimg {
@@ -273,6 +281,11 @@ max-width: 58%;
 float: none;
 margin-bottom:2rem;
 margin-top:2rem;}
+.gridimg {
+object-fit:scale-down;
+-o-object-fit:scale-down;
+height:100%;
+width: 100%;}
 .article p{
 /*margin: 2.5%;
 text-align: left;
@@ -294,6 +307,10 @@ grid:
 	padding : 4.75% 1.80%;
 	padding-right: 10%;
 	text-decoration : none;}
+	
+	
+
+
 .nestedgrid {
 width: 100%;
 display: grid;
@@ -310,15 +327,11 @@ align-content: start;
 height: 100%;}
 }
 @media screen and (min-width: 700px) {
-	
 .articlespace {
 padding-left:25%;
 text-align: left;}
 #preview  {
-max-width: 70%;
-max-height: 70%;
-padding-right:25%;
-padding-top: 8%;}
+max-height: 70%;}
 }
 @media screen and (min-width: 785px) {
 .content {
