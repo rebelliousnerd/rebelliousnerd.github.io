@@ -1,44 +1,17 @@
 @font-face {
-    font-family: 'Bebasneue';
-    src: local('Bebas Neue'), local('BebasNeue'),
-        url('BebasNeue.woff2') format('woff2') ;
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;}
-
-
-
-
-
-
-@font-face {
-    font-family: 'Bebasneuebold';
-    src: local('Bebas Neue Bold'), local('BebasNeueBold'),
-        url('BebasNeueBold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;}
-@font-face {
-    font-family: 'Bebasneuebook';
-    src: local('Bebas Neue Book'), local('BebasNeueBook'),
-        url('BebasNeueBook.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;}
-@font-face {
-    font-family: 'Bebasneueregular';
-    src: local('Bebas Neue Regular'), local('BebasNeueRegular'),
-        url('BebasNeueRegular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;}
-@font-face {
     font-family: 'Interblack';
     src: local('Inter Black'), local('Inter-Black'),
         url('Inter-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
     font-display: swap;}
+    
+    
+    
+    
+    
+    
+    
 @font-face {
     font-family: 'Interblackitialic';
     src: local('Inter Black Italic'), local('Inter-BlackItalic'),
@@ -109,11 +82,6 @@
     font-weight: normal;
     font-style: italic;
     font-display: swap;}
-
-
-
-
-
 @font-face {
     font-family: 'Intersemibolditialic';
     src: local('Inter Semi Bold Italic'), local('Inter-SemiBoldItalic'),
@@ -142,6 +110,7 @@
     font-weight: 900;
     font-style: italic;
     font-display: swap;}
+    
 @font-face {
     font-family: 'Montserratextrabold';
     src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
@@ -205,12 +174,6 @@
     font-weight: 900;
     font-style: italic;
     font-display: swap;}
-    
-    
-    
-    
-    
-    
 @font-face {
     font-family: 'Mulibold';
     src: local('Muli Bold'), local('Muli-Bold'),
@@ -246,6 +209,8 @@
     font-weight: bold;
     font-style: normal;
     font-display: swap;}
+    
+    
 @font-face {
     font-family: 'Muliitalic';
     src: local('Muli Italic'), local('Muli-Italic'),
@@ -304,13 +269,6 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;}
-    
-    
-    
-    
-    
-    
-    
 @font-face {
     font-family: 'lato';
     src: local('Lato Regular'), local('Lato-Regular'),
@@ -346,6 +304,13 @@
     font-weight: 900;
     font-style: italic;
     font-display: swap;}
+    
+    
+    
+    
+    
+    
+    
 @font-face {
     font-family: 'Latoblack';
     src: local('Lato Black'), local('Lato-Black'),
