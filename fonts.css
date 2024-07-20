@@ -27,13 +27,6 @@
     font-style: italic;
     font-display: swap;}
 @font-face {
-    font-family: 'Interextrabold';
-    src: local('Inter Extra Bold'), local('Inter-ExtraBold'),
-        url('Inter-ExtraBold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;}
-@font-face {
     font-family: 'Interbolditialic';
     src: local('Inter Bold Italic'), local('Inter-BoldItalic'),
         url('Inter-BoldItalic.woff2') format('woff2');
@@ -76,13 +69,6 @@
     font-style: italic;
     font-display: swap;}
 @font-face {
-    font-family: 'Librebaskervilleitalic';
-    src: local('Libre Baskerville Italic'), local('LibreBaskerville-Italic'),
-        url('LibreBaskerville-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;}
-@font-face {
     font-family: 'Intersemibolditialic';
     src: local('Inter Semi Bold Italic'), local('Inter-SemiBoldItalic'),
         url('Inter-SemiBoldItalic.woff2') format('woff2');
@@ -110,14 +96,6 @@
     font-weight: 900;
     font-style: italic;
     font-display: swap;}
-    
-@font-face {
-    font-family: 'Montserratextrabold';
-    src: local('Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
-        url('Montserrat-ExtraBold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;}
 @font-face {
     font-family: 'Montserratblack';
     src: local('Montserrat Black'), local('Montserrat-Black'),
@@ -132,13 +110,7 @@
     font-weight: bold;
     font-style: italic;
     font-display: swap;}
-@font-face {
-    font-family: 'Montserratextralight';
-    src: local('Montserrat ExtraLight'), local('Montserrat-ExtraLight'),
-        url('Montserrat-ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;}
+    
 @font-face {
     font-family: 'Montserrat';
     src: local('Montserrat Regular'), local('Montserrat-Regular'),
@@ -189,28 +161,12 @@
     font-style: normal;
     font-display: swap;}
 @font-face {
-    font-family: 'Muliextralight';
-    src: local('Muli ExtraLight'), local('Muli-ExtraLight'),
-        url('Muli-ExtraLight.woff2') format('woff2');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;}
-@font-face {
     font-family: 'Mulibolditalic';
     src: local('Muli Bold Italic'), local('Muli-BoldItalic'),
         url('Muli-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
     font-display: swap;}
-@font-face {
-    font-family: 'Muliextrabold';
-    src: local('Muli ExtraBold'), local('Muli-ExtraBold'),
-        url('Muli-ExtraBold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;}
-    
-    
 @font-face {
     font-family: 'Muliitalic';
     src: local('Muli Italic'), local('Muli-Italic'),
@@ -248,27 +204,13 @@
     font-style: normal;
     font-display: swap;}
 @font-face {
-    font-family: 'Playfairdisplayblackitalic';
-    src: local('Playfair Display Black Italic'), local('PlayfairDisplay-BlackItalic'),
-        url('PlayfairDisplay-BlackItalic.woff2') format('woff2');
-    font-weight: 900;
-    font-style: italic;
-    font-display: swap;}
-@font-face {
-    font-family: 'Playfairdisplayitialic';
-    src: local('Playfair Display Italic'), local('PlayfairDisplay-Italic'),
-         url('PlayfairDisplay-Italic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;}
-    
-@font-face {
     font-family: 'Playfairdisplay';
     src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'),
         url('PlayfairDisplay-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;}
+    
 @font-face {
     font-family: 'lato';
     src: local('Lato Regular'), local('Lato-Regular'),
@@ -304,13 +246,6 @@
     font-weight: 900;
     font-style: italic;
     font-display: swap;}
-    
-    
-    
-    
-    
-    
-    
 @font-face {
     font-family: 'Latoblack';
     src: local('Lato Black'), local('Lato-Black'),

@@ -80,7 +80,7 @@ margin-right:5%;
 margin-left: 5%;
 text-align:center;}
 .content h1 , .title h1 {
-font-family:Playfairdisplay, sans-serif;;
+font-family:Playfairdisplay, sans-serif;
 font-size: 1.7rem;
 text-align : center;
 color: rgb(40, 28, 194);}
@@ -212,9 +212,7 @@ text-decoration: none; color: gold;}
   
   
 
-#menu li::before {
-  content: "\200B";}
-li.current a {color: grey;}
+li.current a {color: lightblue;}
 #menu a {
 	color : lightblue;
 	padding : 4.75% 1.80%;
@@ -311,6 +309,7 @@ grid:
 	
 	
 	
+
 
 .nestedgrid {
 width: 100%;
