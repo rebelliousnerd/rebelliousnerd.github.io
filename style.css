@@ -1,21 +1,16 @@
-a:visited{
-color :maroon;}
 a:hover{
 outline: solid darkgreen;}
 a:focus, 
 a:active {
 outline: solid darkgreen;}
 #about{
-/*margin-right: 25%;*/
-margin-top: 2rem;
-/*padding: 0;*/}
-
-
+margin-top: 2rem;}
 #aboutmeimg  {
 float: left;    
 margin-right: 1rem;
 max-width: 28%;
 max-height: 40%;}
+
 .article h1, h2{
 text-align: center;}
 .article p{
@@ -105,12 +100,6 @@ font-size: 1.2rem}
 	font-size:1.1rem;
 	margin-top: .4rem;
 	line-height: 0}
-	
-	
-	
-	
-	
-	
 .email {
   font-family: Playfairdisplay, sans-serif;
   color: rgb(212, 212, 187);
@@ -121,6 +110,7 @@ font-size: 1.2rem}
   font-size: 1rem;
   margin-left:10% }
 figure {padding-top:2.5%;}
+
 figcaption {font-family:Interitialic, sans-serif;
 font-size: 1.2rem;
 line-height: 1.5;
@@ -128,17 +118,11 @@ text-align: center;}
 .footer { grid-area: footer;
 background-color: black;
 font-size:1.2rem; }
-.footer a:active, .footer a:hover  {
-  color:lightblue;
-  text-decoration: underline;
-  outline: solid azure;}
-footer p a , footer p a:visited {color: rgb(212, 212, 187);}
+footer a , footer a:visited {color: rgb(212, 212, 187);}
 .footer a:focus,
 .footer a:active, .footer a:hover  {
-  color:lightblue;
   text-decoration: underline;
-  outline: solid azure;}
-footer p a , footer p a:visited {color: rgb(212, 212, 187);}
+  outline: solid gold;}
 .gridimg {
 object-fit:contain;
 -o-object-fit:contain;}
@@ -155,15 +139,13 @@ object-fit:contain;
   color:rgb(125, 205, 225);}
 .header a:focus, 
 a:active {
-text-decoration: underline;
-	color : gold;
-	outline: inherit;}	
+	outline: solid gold;
+text-decoration: none;}	
 .header a:hover {
-	text-decoration: underline;
-	color : gold;
-	outline: inherit;}
+	outline: solid gold;
+	text-decoration: none;}
 .header a:current {
-text-decoration: none; color: gold;}
+text-decoration: none;}
 .heading { grid-area: heading;}
 #heading h1 {
 color: rgb(20, 15, 2);
@@ -197,21 +179,15 @@ text-align: center;}
   color:lightblue;}
 #menu a:focus, 
  a:active {
-text-decoration: underline;
-	color : gold;
-	outline: inherit;}	
+text-decoration: none;
+	outline: solid gold;}	
 #menu a:hover {
-	text-decoration: underline;
-	color : gold;
-	outline: inherit;}
+	text-decoration: none;
+	outline: solid gold;}
 #menu a:current {
-text-decoration: none; color: gold;}
+text-decoration: none;}
 #menu li {
   display: inline;}
-  
-  
-  
-
 li.current a {color: lightblue;}
 #menu a {
 	color : lightblue;
@@ -234,6 +210,7 @@ grid-auto-flow: column;
 align-content: start;
 height: 100%;}
 photo { grid-area: photo; }
+
 #preview {
 max-width: 100%;}
 #removestyle{
@@ -281,6 +258,8 @@ float: none;
 margin-bottom:2rem;
 margin-top:2rem;}
 .article p{}
+figcaption {
+text-align: left;}
 .gridimg {
 object-fit:scale-down;
 -o-object-fit:scale-down;
@@ -300,17 +279,17 @@ grid:
     / auto;
     gap:0;}
   #menu {
-	line-height :.8;}
+  	margin:0;}
 #menu a {
 	color : lightblue;
-	padding-right: 10%;
 	text-decoration : none;
-	text-align: center;}
-	
-	
-	
-
-
+	margin: 0 1rem;
+	display: inline-block;
+    vertical-align: middle;
+    line-height: normal;}
+.navigation {
+text-align: center;
+line-height :.8;}
 .nestedgrid {
 width: 100%;
 display: grid;
@@ -331,6 +310,7 @@ height: 100%;}
 	text-align: center;}
 }
 @media screen and (min-width: 700px) {
+	
 .articlespace {
 padding-left:25%;
 text-align: left;}
