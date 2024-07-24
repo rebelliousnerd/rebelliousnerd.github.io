@@ -21,8 +21,6 @@ font-size: 1.1rem;}
 text-align: center;
 font-size:1.1rem;}
 .articlename { grid-area: articlename; }
-.articlespace {
-text-align: left;}
 #atitle{
 text-decoration: none;
 color:blue;
@@ -33,6 +31,26 @@ line-height: 0}
 #atitle a:visited {
 text-decoration: none;
 color: blue;}
+.blocklink {
+position: relative;
+border: .2em solid rgba(0,0,2,.15);
+border-radius: 1em;
+padding:1rem 0;}
+.blocklink a[href]::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;}
+.blocklink:hover, .blocklink:focus-within, .default:hover, .default:focus-within {
+  border-color: black;}
+.blocklink a[href]:hover, .blocklink a[href]:focus {
+  outline: .4em black;
+  outline-offset: .25em;}
+/* NO IE */
+.blocklink:hover a[href]:hover, .blocklink:hover a[href]:focus{ outline: none;}
 #blockquote:before {
 color: navy;
 content: open-quote;
@@ -92,6 +110,7 @@ line-height: 2;
 color: rgb(20, 15, 2);
 text-align: left;
 font-size: 1.2rem} 
+
 .date { grid-area: date;}
 #date {
 color: rgb(20, 15, 2);
@@ -109,8 +128,6 @@ text-decoration: underline;
 display: inline-block;
 margin-left:10% } 
 figure {padding-top:2.5%;}
-
-
 figcaption{
 font-family:Interitialic, sans-serif;
 font-size: 1.2rem;
@@ -148,7 +165,7 @@ header a:focus-visible { outline: solid gold; }
 text-decoration: none;}
 .header a:current {
 text-decoration: none;}
-.heading { grid-area: heading;}
+/*.heading { grid-area: heading;}*/
 #heading h1 {
 color: rgb(20, 15, 2);
 line-height: 0;}
@@ -188,29 +205,31 @@ text-decoration: none;}
 #menu a:current {
 text-decoration: none;}
 #menu li {
-  display: inline;}
+display: inline;}
 li.current a {color: lightblue;}
+
+
+
+
 #menu a {
 color : lightblue;
 padding : 4.75% 1.80%;
-padding-right: 10%;
-text-decoration : none;}
+text-decoration : none;
+margin: 1.5rem;}
 .navigation { grid-area: navigation;
 background-color: black; }
 .nestedgrid {
 width: 100%;
 display: grid;
 grid:
-"heading heading" auto
+/*"heading heading" auto*/
 "articlename articlename" auto
 "date date" auto
 "summary photo" auto
 / auto;
 gap: 1rem;
 grid-auto-flow: column;
-align-content: start;
-height: 100%;}
-
+align-content: start;}
 photo { grid-area: photo; }
 #preview {
 max-width: 100%;}
@@ -248,7 +267,7 @@ color : rgb(212, 212, 187);}
 .websiteinfo p {
 text-align :center;
 padding: 2% 0}
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 628px) {
 #about{
 padding-left: 2.2rem;
 padding-right:2.2rem;
@@ -259,6 +278,8 @@ float: none;
 margin-bottom:2rem;
 margin-top:2rem;}
 .article p{}
+#articlespace{
+margin-left: 1rem;}
 figcaption {
 text-align: left;}
 .gridimg {
@@ -281,12 +302,16 @@ grid:
 / auto;
 gap:0;}
 #menu {
-margin:0;}
+margin-right:2.8rem;}
 #menu a {
-margin: 0 1rem;
+margin: 0 1rem;;
 display: inline-block;
 vertical-align: middle;
 line-height: normal;}
+
+
+
+
 .navigation {
 text-align: center;
 line-height :.8;}
@@ -294,7 +319,7 @@ line-height :.8;}
 width: 100%;
 display: grid;
 grid:
-"heading heading" auto
+/*"heading heading" auto*/
 "date date" auto
 "articlename articlename" auto
 "photo photo" auto
@@ -302,19 +327,15 @@ grid:
 / auto;
 gap: 1em;
 grid-auto-flow: column;
-align-content: start;
-height: 100%;}
+align-content: start;}
 .sitename {
 line-height : 2.8;
 margin-top: -.2rem;
 text-align: center;}
 }
 @media screen and (min-width: 700px) {
-	
-	
-.articlespace {
-padding-left:25%;
-text-align: left;}
+#articlespace{
+margin-left: 5%;}
 #preview  {
 max-height: 70%;}
 }
