@@ -11,8 +11,6 @@ margin-right: 1rem;
 max-width: 28%;
 max-height: 40%;}
 
-.article h1, h2{
-text-align: center;}
 .article p{
 margin: 10%;
 text-align: left;
@@ -95,12 +93,10 @@ text-align:center;}
 .content h1 , .title h1 {
 font-family:Playfairdisplay, sans-serif;
 font-size: 1.7rem;
-text-align : center;
 color: rgb(40, 28, 194);}
 .content h2 , aside h2 {
 font-family:Playfairdisplay, serif;
 font-size : 1.5rem;
-text-align : center;
 margin: 5% 0;
 color: rgb(40, 28, 194);}
 .content p {
@@ -110,17 +106,19 @@ line-height: 2;
 color: rgb(20, 15, 2);
 text-align: left;
 font-size: 1.2rem} 
-
 .date { grid-area: date;}
+
+
+
+
 #date {
 color: rgb(20, 15, 2);
 text-align: center;
 font-family: Inter, sans-serif;
-font-size:1.1rem;
+font-size:1.2rem;
 margin-top: .4rem;
 line-height: 0}
 .email {
-font-family: Playfairdisplay, sans-serif;
 color: rgb(212, 212, 187);
 padding: .5rem .5rem;
 text-align: center;
@@ -135,7 +133,8 @@ line-height: 1.5;
 text-align: center;}
 footer { grid-area: footer;
 background-color: black;
-font-size:1.2rem; }
+font-size:1.2rem;
+font-family:Inter, sans-serif; }
 footer a , footer a:visited {color: rgb(212, 212, 187);}
 footer a:focus { outline: solid gold; }
 @supports selector(:focus-visible) {
@@ -145,15 +144,17 @@ footer a:focus-visible { outline: solid gold; }
 .gridimg {
 object-fit:contain;
 -o-object-fit:contain;}
-.header { grid-area: header; }
-.header a {
+.header { grid-area: header; 
+background : black;
+text-align: center;}
+header a {
 color : rgb(125, 205, 225);
 font-weight : bold;
 padding : 4.75% 1.80%;
 padding-right: 10%;
 text-decoration : none;}
-.header a:link,
-.header a:visited {
+header a:link,
+header a:visited {
 text-decoration: none;
 color:rgb(125, 205, 225);}
 header a:focus { outline: solid gold; }
@@ -161,17 +162,14 @@ header a:focus { outline: solid gold; }
 header a:focus {}
 header a:focus-visible { outline: solid gold; }
 }	
-.header a:hover {
+header a:hover {
 text-decoration: none;}
-.header a:current {
+header a:current {
 text-decoration: none;}
 /*.heading { grid-area: heading;}*/
 #heading h1 {
 color: rgb(20, 15, 2);
 line-height: 0;}
-.intro {
-background : black;
-text-align: center;}
 .layout {
 width: 100%;
 min-height: 100vh;
@@ -184,13 +182,13 @@ grid:
 gap:0;}
 .main { grid-area: main; }
 #menu {
-	font-family: Montserratbold, sans-serif;
-	letter-spacing: .5px;
-	margin-left :5%;
-	padding-top: 2.8%;
-	list-style : none;
-	font-size : 1.5rem;
-	line-height : 2.5;}
+font-family: Montserratbold, sans-serif;
+letter-spacing: .5px;
+margin-left :5%;
+padding-top: 2.8%;
+list-style : none;
+font-size : 1.5rem;
+line-height : 2.5;}
 #menu a:link,
 #menu a:visited {
 text-decoration: none;
@@ -207,17 +205,14 @@ text-decoration: none;}
 #menu li {
 display: inline;}
 li.current a {color: lightblue;}
-
-
-
-
 #menu a {
 color : lightblue;
 padding : 4.75% 1.80%;
 text-decoration : none;
 margin: 1.5rem;}
-.navigation { grid-area: navigation;
-background-color: black; }
+
+.navigation { grid-area: navigation; 
+background : black;}
 .nestedgrid {
 width: 100%;
 display: grid;
@@ -230,7 +225,7 @@ grid:
 gap: 1rem;
 grid-auto-flow: column;
 align-content: start;}
-photo { grid-area: photo; }
+.photo { grid-area: photo; }
 #preview {
 max-width: 100%;}
 #removestyle{
@@ -262,7 +257,6 @@ clip: rect(0 0 0 0);
 clip-path: inset(50%);}
 .summary { grid-area: summary; }
 .websiteinfo {
-font-family:Playfairdisplay, sans-serif;
 color : rgb(212, 212, 187);}
 .websiteinfo p {
 text-align :center;
@@ -277,7 +271,6 @@ max-width: 58%;
 float: none;
 margin-bottom:2rem;
 margin-top:2rem;}
-.article p{}
 #articlespace{
 margin-left: 1rem;}
 figcaption {
@@ -286,8 +279,7 @@ text-align: left;}
 object-fit:scale-down;
 -o-object-fit:scale-down;
 height:100%;
-width: 100%;
-margin-left:4rem;}
+width: 100%;}
 .header a {
 padding: 0;}
 .layout {
@@ -308,13 +300,17 @@ margin: 0 1rem;;
 display: inline-block;
 vertical-align: middle;
 line-height: normal;}
-
-
-
-
 .navigation {
 text-align: center;
 line-height :.8;}
+
+
+
+
+
+
+
+
 .nestedgrid {
 width: 100%;
 display: grid;
@@ -343,8 +339,7 @@ max-height: 70%;}
 .content {
 padding: 2% 8%;
 margin-left: 14%;
-margin-right:14%; 
-text-align:center;}
+margin-right:14%; }
 }
 @media print  {
 body  { 
