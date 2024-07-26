@@ -49,29 +49,28 @@ padding:1rem 0;}
   outline-offset: .25em;}
 /* NO IE */
 .blocklink:hover a[href]:hover, .blocklink:hover a[href]:focus{ outline: none;}
-#blockquote:before {
+#bq:before {
 color: navy;
 content: open-quote;
 font-size: 2rem;
 line-height: 0.1em;
 margin-right: 0.25em;
 vertical-align: -0.4em;}
-#blockquote:after {
+#bq:after {
 color: navy;
 content: close-quote;
 font-size: 2rem;
 line-height: 0.1em;
 margin-right: 0.25em;
 vertical-align: -0.4em;}
-#blockquote p{
+#bq p {
 font-family:lato, sans-serif;
 display: inline;
 font-size: 1.2rem;
 margin:auto;
 line-height: 1.5;
-text-align: left;
-display: inline;}
-#blockquote {
+text-align: left;}
+#bq {
 background-color: lightgrey;
 font-size:1.2rem;
 border-left: 0.7rem solid navy;
@@ -107,6 +106,7 @@ color: rgb(20, 15, 2);
 text-align: left;
 font-size: 1.2rem} 
 .date { grid-area: date;}
+
 
 
 
@@ -166,7 +166,6 @@ header a:hover {
 text-decoration: none;}
 header a:current {
 text-decoration: none;}
-/*.heading { grid-area: heading;}*/
 #heading h1 {
 color: rgb(20, 15, 2);
 line-height: 0;}
@@ -211,13 +210,13 @@ padding : 4.75% 1.80%;
 text-decoration : none;
 margin: 1.5rem;}
 
+
 .navigation { grid-area: navigation; 
 background : black;}
 .nestedgrid {
 width: 100%;
 display: grid;
 grid:
-/*"heading heading" auto*/
 "articlename articlename" auto
 "date date" auto
 "summary photo" auto
@@ -311,11 +310,11 @@ line-height :.8;}
 
 
 
+
 .nestedgrid {
 width: 100%;
 display: grid;
 grid:
-/*"heading heading" auto*/
 "date date" auto
 "articlename articlename" auto
 "photo photo" auto
