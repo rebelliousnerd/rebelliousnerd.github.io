@@ -21,14 +21,14 @@ font-size:1.1rem;}
 .articlename { grid-area: articlename; }
 #atitle{
 text-decoration: none;
-color:blue;
+color:rgb(0 0 175);
 font-size : 1.5rem;
 font-weight: bold;
 line-height: 0}
 #atitle a:link,
 #atitle a:visited {
 text-decoration: none;
-color: blue;}
+color: rgb(0 0 175);}
 .blocklink {
 position: relative;
 border: .2em solid navy;
@@ -83,7 +83,7 @@ font-size : 100%;
 font-style : normal;
 font-weight : normal;
 color: rgb(20, 15, 2);
-background-color : rgb(240, 241, 244);}
+background-color: rgb(245, 241, 250);}
 .content {
 padding: 2% 8%;
 margin-right:5%;
@@ -92,12 +92,12 @@ text-align:center;}
 .content h1 , .title h1 {
 font-family:Playfairdisplay, sans-serif;
 font-size: 1.7rem;
-color: rgb(40, 28, 194);}
+color: rgb(0 0 175);}
 .content h2 , aside h2 {
 font-family:Playfairdisplay, serif;
 font-size : 1.5rem;
 margin: 5% 0;
-color: rgb(40, 28, 194);}
+color: rgb(0 0 175);}
 .content p {
 margin: 1% 0;
 font-family:Inter, sans-serif;
@@ -149,7 +149,7 @@ object-fit:contain;
 background : black;
 text-align: center;}
 header a {
-color : rgb(125, 205, 225);
+color:rgb(127, 175, 240);
 font-weight : bold;
 padding : 4.75% 1.80%;
 padding-right: 10%;
@@ -157,7 +157,7 @@ text-decoration : none;}
 header a:link,
 header a:visited {
 text-decoration: none;
-color:rgb(125, 205, 225);}
+color: rgb(127, 175, 240);}
 header a:focus { outline: solid gold; }
 @supports selector(:focus-visible) {
 header a:focus {}
@@ -168,7 +168,7 @@ text-decoration: none;}
 header a:current {
 text-decoration: none;}
 #heading h1 {
-color: rgb(20, 15, 2);
+color: rgb(0 0 175);
 line-height: 0;}
 .layout {
 width: 100%;
@@ -192,7 +192,7 @@ line-height : 2.5;}
 #menu a:link,
 #menu a:visited {
 text-decoration: none;
-color:lightblue;}
+color:rgb(80 177 228);}
 #menu a:focus { outline: solid gold; }
 @supports selector(:focus-visible) {
 #menu a:focus {}
@@ -204,9 +204,9 @@ text-decoration: none;}
 text-decoration: none;}
 #menu li {
 display: inline;}
-li.current a {color: lightblue;}
+li.current a {color: rgb(80 177 228);}
 #menu a {
-color : lightblue;
+color : rgb(80 177 228);
 padding : 4.75% 1.80%;
 text-decoration : none;
 margin: 0 20px;}
@@ -256,7 +256,7 @@ clip: rect(0 0 0 0);
 clip-path: inset(50%);}
 .summary { grid-area: summary; }
 .websiteinfo {
-color : rgb(212, 212, 187);}
+color: rgb(212, 212, 187);}
 .websiteinfo p {
 text-align :center;
 padding: 2% 0}
