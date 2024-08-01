@@ -15,40 +15,19 @@ max-height: 40%;}
 margin: 10%;
 text-align: left;
 font-size: 1.1rem;}
+.articlepreview {
+border: .4rem solid navy;
+border-radius: 1rem;
+padding: 0 .5rem;
+background-color: lightblue;}
 #articledate {
 text-align: center;
 font-size:1.1rem;}
 .articlename { grid-area: articlename; }
-#atitle{
-text-decoration: none;
-color:rgb(0 0 175);
-font-size : 1.5rem;
-font-weight: bold;
-line-height: 0}
-#atitle a:link,
-#atitle a:visited {
+.articlename a:link,
+.articlename a:visited {
 text-decoration: none;
 color: rgb(0 0 175);}
-.blocklink {
-position: relative;
-border: .2em solid navy;
-border-radius: 1em;
-padding:1rem 0;}
-.blocklink a[href]::after {
-content: "";
-display: block;
-position: absolute;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;}
-.blocklink:hover, .blocklink:focus-within, .default:hover, .default:focus-within {
-border-color: black;}
-.blocklink a[href]:hover, .blocklink a[href]:focus {
-outline: .2em solid black;
-outline-offset: .25em;}
-/* NO IE */
-.blocklink:hover a[href]:hover, .blocklink:hover a[href]:focus{ outline: none;}
 #bq:before {
 color: navy;
 content: open-quote;
@@ -89,11 +68,11 @@ padding: 2% 8%;
 margin-right:5%;
 margin-left: 5%;
 text-align:center;}
-.content h1 , .title h1 {
+.content h1 {
 font-family:Playfairdisplay, sans-serif;
 font-size: 1.7rem;
 color: rgb(0 0 175);}
-.content h2 , aside h2 {
+.content h2 {
 font-family:Playfairdisplay, serif;
 font-size : 1.5rem;
 margin: 5% 0;
@@ -106,11 +85,6 @@ color: rgb(20, 15, 2);
 text-align: left;
 font-size: 1.2rem} 
 .date { grid-area: date;}
-
-
-
-
-
 #date {
 color: rgb(20, 15, 2);
 text-align: center;
@@ -119,7 +93,6 @@ font-size:1.2rem;
 margin-top: .4rem;
 line-height: 0}
 .email {
-color: rgb(212, 212, 187);
 padding: .5rem .5rem;
 text-align: center;
 text-decoration: underline;
@@ -132,12 +105,19 @@ font-size: 1.2rem;
 line-height: 1.5;
 text-align: center;
 font-style: italic;}
+
+
+
+
+
+
 footer { grid-area: footer;
 background-color: black;
 font-size:1.2rem;
-font-family:Inter, sans-serif; }
-footer a , footer a:visited {color: rgb(212, 212, 187);}
-footer a:focus { outline: solid gold; }
+font-family:Inter, sans-serif;
+color: rgb(200, 200, 187); }
+footer a , footer a:visited {color: rgb(200, 200, 187);}
+footer a:focus { outline: solid gold;}
 @supports selector(:focus-visible) {
 footer a:focus {}
 footer a:focus-visible { outline: solid gold; }
@@ -149,7 +129,7 @@ object-fit:contain;
 background : black;
 text-align: center;}
 header a {
-color:rgb(127, 175, 240);
+color: rgb(80 177 228);
 font-weight : bold;
 padding : 4.75% 1.80%;
 padding-right: 10%;
@@ -157,7 +137,7 @@ text-decoration : none;}
 header a:link,
 header a:visited {
 text-decoration: none;
-color: rgb(127, 175, 240);}
+color: rgb(80 177 228);}
 header a:focus { outline: solid gold; }
 @supports selector(:focus-visible) {
 header a:focus {}
@@ -167,9 +147,6 @@ header a:hover {
 text-decoration: none;}
 header a:current {
 text-decoration: none;}
-#heading h1 {
-color: rgb(0 0 175);
-line-height: 0;}
 .layout {
 width: 100%;
 min-height: 100vh;
@@ -210,7 +187,6 @@ color : rgb(80 177 228);
 padding : 4.75% 1.80%;
 text-decoration : none;
 margin: 0 20px;}
-
 .navigation { grid-area: navigation; 
 background : black;}
 .nestedgrid {
@@ -232,6 +208,11 @@ text-decoration: none;}
 .responsiveimg {
 max-width: 25%;
 max-height: 25%;}
+
+
+
+
+
 .sitename {
 line-height : 4;
 font-size : 2rem;
@@ -255,8 +236,6 @@ white-space: nowrap;
 clip: rect(0 0 0 0);
 clip-path: inset(50%);}
 .summary { grid-area: summary; }
-.websiteinfo {
-color: rgb(212, 212, 187);}
 .websiteinfo p {
 text-align :center;
 padding: 2% 0}
@@ -270,6 +249,10 @@ max-width: 58%;
 float: none;
 margin-bottom:2rem;
 margin-top:2rem;}
+.articlepreview {
+border: .2rem solid navy;
+padding: .7rem .5rem;
+margin-left: -.5rem;}
 #articlespace{
 margin-left: 1rem;}
 #bq {
@@ -309,8 +292,6 @@ margin: 0 1rem;
 display: inline-block;
 vertical-align: middle;
 line-height: normal;}
-
-
 .navigation {
 text-align: center;
 line-height :.8;}
@@ -326,6 +307,10 @@ grid:
 gap: 1em;
 grid-auto-flow: column;
 align-content: start;}
+
+
+
+
 .sitename {
 line-height : 2.8;
 margin-top: -.2rem;
@@ -337,6 +322,7 @@ margin-left: 5%;}
 #preview  {
 max-height: 70%;}
 }
+
 @media screen and (min-width: 785px) {
 .content {
 padding: 2% 8%;

@@ -126,21 +126,6 @@
     font-style: normal;
     font-display: swap;}
 @font-face {
-    font-family: 'Muliblack';
-    src: local('Muli Black'), local('Muli-Black'),
-        url('Muli-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;}
-@font-face {
-    font-family: 'Mulisemibold';
-    src: url('Muli-SemiBold.eot');
-    src: local('Muli SemiBold'), local('Muli-SemiBold'),
-        url('Muli-SemiBold.woff2') format('woff2');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;}
-@font-face {
     font-family: 'muli';
     src: local('Muli Regular'), local('Muli-Regular'),
         url('Muli-Regular.woff2') format('woff2');
