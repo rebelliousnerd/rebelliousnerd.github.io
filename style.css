@@ -330,11 +330,28 @@ margin-left: 14%;
 margin-right:14%; }
 }
 @media print  {
+nav,#aboutmeimg, .email, .photo  { 
+display: none;}
 body  { 
-font-size: 1em;}
-body, .intro, .websiteinfo, a:link, a:visited, a:focus, a:hover, a:active{color: darkslategrey;}
-body, .intro, .websiteinfo  {
-background-color: transparent; }
-#menu {display: none;}
-#sitename{font-style: normal;}
+font-size: 18px;}
+body, nav, .articlepreview, .articlename a:link,.articlename a:visited, .header, .header a:link,.header a:visited, 
+footer, main, .content h1, #date, .content h2 {
+font-family:sans-serif;
+color: black;
+background-color: white;
+border: none;}
+header, footer{
+text-align: center;
+color: black;
+margin: 0;
+}
+#sitename{
+color: black;
+text-align: center;
+font-size: 20px;
+word-spacing: normal;}
+.layout {
+display: block;}
+#date {
+line-height: normal;}
 }
