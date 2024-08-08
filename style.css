@@ -27,6 +27,7 @@ font-size:1.1rem;}
 .articlename a:link,
 .articlename a:visited {
 text-decoration: none;
+color: navy;
 color: rgb(0 0 175);}
 #bq:before {
 color: navy;
@@ -61,7 +62,9 @@ font-family :Inter, sans-serif;
 font-size : 100%;
 font-style : normal;
 font-weight : normal;
+color: black;
 color: rgb(20, 15, 2);
+background-color: white;
 background-color: rgb(245, 241, 250);}
 .content {
 padding: 2% 8%;
@@ -71,21 +74,25 @@ text-align:center;}
 .content h1 {
 font-family:Playfairdisplay, sans-serif;
 font-size: 1.7rem;
+color: navy;
 color: rgb(0 0 175);}
 .content h2 {
 font-family:Playfairdisplay, serif;
 font-size : 1.5rem;
 margin: 5% 0;
+color: navy;
 color: rgb(0 0 175);}
 .content p {
 margin: 1% 0;
 font-family:Inter, sans-serif;
 line-height: 2;
+color: black;
 color: rgb(20, 15, 2);
 text-align: left;
 font-size: 1.2rem} 
 .date { grid-area: date;}
 #date {
+color: black;
 color: rgb(20, 15, 2);
 text-align: center;
 font-family: Inter, sans-serif;
@@ -99,24 +106,25 @@ text-decoration: underline;
 display: inline-block;
 margin-left:10% } 
 figure {padding-top:2.5%;}
+
+
+
+
+
 figcaption{
 font-family:Inter, sans-serif;
 font-size: 1.2rem;
 line-height: 1.5;
 text-align: center;
 font-style: italic;}
-
-
-
-
-
-
 footer { grid-area: footer;
 background-color: black;
 font-size:1.2rem;
 font-family:Inter, sans-serif;
+color: white;
 color: rgb(200, 200, 187); }
-footer a , footer a:visited {color: rgb(200, 200, 187);}
+footer a , footer a:visited {color: white;
+color: rgb(200, 200, 187);}
 footer a:focus { outline: solid gold;}
 @supports selector(:focus-visible) {
 footer a:focus {}
@@ -129,6 +137,7 @@ object-fit:contain;
 background : black;
 text-align: center;}
 header a {
+color: lightblue;
 color: rgb(80 177 228);
 font-weight : bold;
 padding : 4.75% 1.80%;
@@ -137,6 +146,7 @@ text-decoration : none;}
 header a:link,
 header a:visited {
 text-decoration: none;
+color: lightblue;
 color: rgb(80 177 228);}
 header a:focus { outline: solid gold; }
 @supports selector(:focus-visible) {
@@ -169,6 +179,7 @@ line-height : 2.5;}
 #menu a:link,
 #menu a:visited {
 text-decoration: none;
+color: lightblue;
 color:rgb(80 177 228);}
 #menu a:focus { outline: solid gold; }
 @supports selector(:focus-visible) {
@@ -181,14 +192,25 @@ text-decoration: none;}
 text-decoration: none;}
 #menu li {
 display: inline;}
-li.current a {color: rgb(80 177 228);}
+li.current a {
+color: lightblue;
+color: rgb(80 177 228);}
 #menu a {
+color: lightblue;
 color : rgb(80 177 228);
 padding : 4.75% 1.80%;
 text-decoration : none;
 margin: 0 20px;}
 .navigation { grid-area: navigation; 
 background : black;}
+
+
+
+
+
+
+
+
 .nestedgrid {
 width: 100%;
 display: grid;
@@ -208,11 +230,6 @@ text-decoration: none;}
 .responsiveimg {
 max-width: 25%;
 max-height: 25%;}
-
-
-
-
-
 .sitename {
 line-height : 4;
 font-size : 2rem;
@@ -292,6 +309,8 @@ margin: 0 1rem;
 display: inline-block;
 vertical-align: middle;
 line-height: normal;}
+
+
 .navigation {
 text-align: center;
 line-height :.8;}
@@ -307,10 +326,6 @@ grid:
 gap: 1em;
 grid-auto-flow: column;
 align-content: start;}
-
-
-
-
 .sitename {
 line-height : 2.8;
 margin-top: -.2rem;
